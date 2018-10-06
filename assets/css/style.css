@@ -1,0 +1,228 @@
+/*Style for the whole body*/
+body {
+    background-image: url("../images/gravel.png"); /*Set page background image*/
+    color: #777777;
+    margin: 0px;
+    font-size: 16px;
+}
+
+/*Styling for the header tags*/
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*Style for the whole body, all input tags, and all textarea tags*/
+body, input, textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Part of the "calc reduced height wrapper" method 
+of producing a sticky footer from css-tricks.com. 
+This is part of the homework bonus.*/
+.wrapper{
+    min-height: calc(100vh - 96px);
+}
+
+/*styling for the main header div*/
+header{
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    min-width: 960px;
+}
+
+/*Div container for the header*/
+.headerContainer {
+    margin: auto;
+    width: 960px;
+    height: 100%;
+}
+
+/*Style for the header div container holding my name*/
+.yourNameSection{
+    float: left;
+    height: 100%;
+    background-color: #4aaaa5;
+    color:white;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Style for the navigation links in the header*/
+.navLinks {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Style for the navigation anchor tags in the header*/
+.navLinks a {
+    border-right: 1px solid #cccccc;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #777777;
+    margin-left: -5px;
+}
+
+/*Hover style for the navigation anchor tags in the header.
+This is part of the homework bonus*/
+.navLinks a:hover{
+    background-color: #4aaaa5;
+    color: white;
+}
+
+/*Style the last anchor tag in the navigation section of the 
+header so it does not contain right border.*/
+.navLinks a:last-child{
+    border-right: none;
+}
+
+/*Styling for the main content section*/
+.mainContent {
+    margin: 40px auto 40px auto;
+    width: 920px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+/*Standard clear fix style so text will flow around an image.*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Style for the main content header*/
+.mainContentHeader {
+    color: #4aaaa5;
+    margin-top: 0px;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 20px;
+}
+
+/*Style for my picture img tag*/
+.myPic {
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding-right: 15px;
+}
+
+/*Footer tag style*/
+footer {
+    background-color: #666666;
+    height: 50px;
+    text-align: center;
+    border-top: 6px solid #4aaaa5;
+    min-width: 960px;
+    color: white;
+    font-size: 12px;
+}
+
+/*Style for the copyright paragraph on the footer*/
+.copyRight {
+    padding-top: 15px;
+}
+
+/*Style for the div containing a label and input tag*/
+.labelInputPair {
+    padding-top: 10px;
+}
+
+/*Style for the input tag or textarea tag within the
+ div containing a label and input/textarea tag */
+.labelInputPair input, .labelInputPair textarea{
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin: 8px 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+/*Style for the textarea tag within the
+ div containing a label and textarea tag */
+.labelInputPair textarea{
+    height: 150px;
+}
+
+/*Style for the div containing a button*/
+.buttonDiv {
+    padding-top: 10px;
+}
+
+/*Style for the submit button*/
+.buttonDiv input[type="submit"] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Style for the block divs containing 
+the pictures in the portfolio.html. 
+Using FlexBox to align the divs 
+containing the title of each box towards
+the bottom.  */
+.block {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 20px 20px 0px;
+}
+
+/*The div containing the title text within the
+contact.html page. Aligning text to the center
+vertically and horizontally. */
+.blockTitle {
+    text-align: center;
+    font-size: 13px;
+    background-color: #4aaaa5;
+    height: 35px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/*Block container is the div containing a the set of boxes 
+with images in the contact.html. Set flex div boxes where 
+the contents are aligned to the left. */
+.blockContainer{
+    display: flex;
+    justify-content: flex-start; 
+}
+
+/*Set the div background images for the portfolio.html */
+.hangmanDiv {
+    background-image: url("../images/baldeagle.jpg")
+}
+/*Set the div background images for the portfolio.html */
+.rpgGameDiv {
+    background-image: url("../images/cow.jpg")
+}
+/*Set the div background images for the portfolio.html */
+.triviaGameDiv {
+    background-image: url("../images/dog.jpg")
+}
+/*Set the div background images for the portfolio.html */
+.rutgersWidgetDiv {
+    background-image: url("../images/multicolor-drop-2-1056473.jpg")
+}
+/*Set the div background images for the portfolio.html */
+.rockPaperScissorsDiv {
+    background-image: url("../images/tropical.jpg")
+}
