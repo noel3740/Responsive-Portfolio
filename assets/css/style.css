@@ -69,11 +69,25 @@ header{
     margin-left: -5px;
 }
 
+/*Animation definition for links*/
+@keyframes linkTransition {
+    from {
+        color: black;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background-color: #4aaaa5;
+    }
+}
+
+
 /*Hover style for the navigation anchor tags in the header.
 This is part of the homework bonus*/
 .navLinks a:hover{
-    background-color: #4aaaa5;
-    color: white;
+    animation-name: linkTransition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /*Retain style values from the last keyframe when the animation ends*/
 }
 
 /*Style the last anchor tag in the navigation section of the 
