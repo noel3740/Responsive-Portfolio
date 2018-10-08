@@ -246,6 +246,7 @@ the contents are aligned to the left. */
     /*Select all block classes that are within 
     columns and row containers*/
     .blockRowContainer .blockColContainer .block {
+        margin: 0px; /*Remove any margins*/
         height: unset; /*Remove the div's set height value*/
         width: unset; /*Remove the div's set width value*/
         position: absolute; /*Use absolute positioning to set the div's positioning to the full length and width of the container div*/
@@ -260,6 +261,7 @@ the contents are aligned to the left. */
         width: 100%; /*Set width to 100% to force img to go on it's own row*/
         height: auto; /*Set the height to auto so it auto scales the image*/
         margin-bottom: 15px; /*Set a margin on the bottom of the image so the text is not right up against the image*/
+        padding-right: 0px; /*Removing padding to the right as it will not be necessary when the image is on it's own row*/
     }
     
     /*Style for the header div container holding my name*/
