@@ -29,13 +29,12 @@ header{
     height: 70px;
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
-    min-width: 960px;
 }
 
 /*Div container for the header*/
 .headerContainer {
     margin: auto;
-    width: 960px;
+    max-width: 960px;
     height: 100%;
 }
 
@@ -86,7 +85,7 @@ header so it does not contain right border.*/
 /*Styling for the main content section*/
 .mainContent {
     margin: 40px auto 40px auto;
-    width: 920px;
+    max-width: 920px;
     background-color: #ffffff;
     padding: 20px;
     border: 1px solid #dddddd;
@@ -121,7 +120,6 @@ footer {
     height: 50px;
     text-align: center;
     border-top: 6px solid #4aaaa5;
-    min-width: 960px;
     color: white;
     font-size: 12px;
 }
@@ -174,11 +172,13 @@ Using FlexBox to align the divs
 containing the title of each box towards
 the bottom.  */
 .block {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     display: flex;
     align-items: flex-end;
     margin: 0px 20px 20px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*The div containing the title text within the
@@ -186,7 +186,6 @@ contact.html page. Aligning text to the center
 vertically and horizontally. */
 .blockTitle {
     text-align: center;
-    font-size: 13px;
     background-color: #4aaaa5;
     height: 35px;
     box-sizing: border-box;
@@ -201,28 +200,85 @@ vertically and horizontally. */
 /*Block container is the div containing a the set of boxes 
 with images in the contact.html. Set flex div boxes where 
 the contents are aligned to the left. */
-.blockContainer{
+.blockRowContainer{
     display: flex;
     justify-content: flex-start; 
+    flex-wrap: wrap;
+}
+
+/*Columns in a block container */
+.blockColContainer{
+    width: auto;
 }
 
 /*Set the div background images for the portfolio.html */
 .hangmanDiv {
-    background-image: url("../images/baldeagle.jpg")
+    background-image: url("../images/baldeagle.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rpgGameDiv {
-    background-image: url("../images/cow.jpg")
+    background-image: url("../images/cow.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .triviaGameDiv {
-    background-image: url("../images/dog.jpg")
+    background-image: url("../images/dog.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rutgersWidgetDiv {
-    background-image: url("../images/multicolor-drop-2-1056473.jpg")
+    background-image: url("../images/multicolor-drop-2-1056473.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rockPaperScissorsDiv {
-    background-image: url("../images/tropical.jpg")
+    background-image: url("../images/tropical.jpg");
+}
+
+/*Style for smaller screens*/
+@media screen and (max-width: 640px){
+    /*Select all block column containers that are within 
+    a block row container*/
+    .blockRowContainer .blockColContainer{
+        width: 100%; /*force the div to be 100% of the width*/
+        position: relative; 
+        padding-top: 100%; /*To help with scaling the background image*/
+        margin-bottom: 20px; /*To give some space between divs/background images*/
+    }
+
+    /*Select all block classes that are within 
+    columns and row containers*/
+    .blockRowContainer .blockColContainer .block {
+        height: unset; /*Remove the div's set height value*/
+        width: unset; /*Remove the div's set width value*/
+        position: absolute; /*Use absolute positioning to set the div's positioning to the full length and width of the container div*/
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /*Style for my picture img tag*/
+    .myPic {
+        width: 100%; /*Set width to 100% to force img to go on it's own row*/
+        height: auto; /*Set the height to auto so it auto scales the image*/
+        margin-bottom: 15px; /*Set a margin on the bottom of the image so the text is not right up against the image*/
+    }
+    
+    /*Style for the header div container holding my name*/
+    .yourNameSection {
+        width: 100%; /*Set width to 100% to force div to go on it's own row*/
+        padding: 0px; /*Remove padding as it's not needed when the name is on its own row*/
+        float: none; /*Remove float as it's not needed when the name is on its own row*/
+    }
+
+    /*Style for the navigation links in the header*/
+    .navLinks {
+        width: 100%; /*Set width to 100% to force div to go on it's own row*/
+        background-color: white;
+        float: none; /*Remove float as it's not needed when links are on their own row*/
+        height: 55px; /*Decrease the height as the original height is taller than necessary */
+    }
+
+    /*Styling for the main content section*/
+    .mainContent {
+        margin-top: 70px; /*Setting an increased margin at the top to account for new positioning of nav links*/
+    }
 }
