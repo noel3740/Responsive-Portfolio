@@ -284,4 +284,8 @@ the contents are aligned to the left. */
         margin-top: 70px; /*Setting an increased margin at the top to account for new positioning of nav links*/
         margin-bottom: 10px; /*Decreasing margin on the bottom as the larger margin is not necessary on smaller screens*/
     }
+
+    body {
+        font-size: 20px; /*Increasing font size to improve readability on smaller screens*/
+    }
 }
