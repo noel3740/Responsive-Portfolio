@@ -213,23 +213,23 @@ the contents are aligned to the left. */
 
 /*Set the div background images for the portfolio.html */
 .hangmanDiv {
-    background-image: url("../images/baldeagle.jpg");
+    background-image: url("../images/animals1-400x400.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rpgGameDiv {
-    background-image: url("../images/cow.jpg");
+    background-image: url("../images/animals2-400x400.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .triviaGameDiv {
-    background-image: url("../images/dog.jpg");
+    background-image: url("../images/arch1-400x400.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rutgersWidgetDiv {
-    background-image: url("../images/multicolor-drop-2-1056473.jpg");
+    background-image: url("../images/arch2-400x400.jpg");
 }
 /*Set the div background images for the portfolio.html */
 .rockPaperScissorsDiv {
-    background-image: url("../images/tropical.jpg");
+    background-image: url("../images/nature1-400x400.jpg");
 }
 
 /*Style for smaller screens*/
