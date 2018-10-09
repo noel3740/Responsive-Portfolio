@@ -248,7 +248,8 @@ the contents are aligned to the left. */
 
 /*Style for larger size screens*/
 @media screen and (max-width: 980px){
-    /*Increase the size of my picture for smaller screens*/
+    
+    /*Increase the size of my picture*/
     .myPic{
         height: 200px;
         width: 200px;
@@ -257,8 +258,9 @@ the contents are aligned to the left. */
 
 /*Style for medium size screens*/
 @media screen and (max-width: 768px){
-    body {
-        font-size: 18px; /*Increasing font size to improve readability on medium screens*/
+
+    body, input, textarea {
+        font-size: 18px; /*Increasing font size to improve readability*/
     }
 
     /*Increase the size of my picture for smaller screens*/
@@ -321,7 +323,17 @@ the contents are aligned to the left. */
         margin-bottom: 10px; /*Decreasing margin on the bottom as the larger margin is not necessary on smaller screens*/
     }
 
-    body {
+    body, input, textarea {
         font-size: 20px; /*Increasing font size to improve readability on smaller screens*/
+    }
+
+    .blockTitle {
+        height: 60px; /*Increasing font size to improve readability on smaller screens*/
+    }
+
+    /*Increase button size*/
+    input[type="submit"] {
+        width: 100px;
+        height: 50px;
     }
 }
