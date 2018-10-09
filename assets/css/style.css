@@ -246,6 +246,28 @@ the contents are aligned to the left. */
     background-image: url("../images/nature1-400x400.jpg");
 }
 
+/*Style for larger size screens*/
+@media screen and (max-width: 980px){
+    /*Increase the size of my picture for smaller screens*/
+    .myPic{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*Style for medium size screens*/
+@media screen and (max-width: 768px){
+    body {
+        font-size: 18px; /*Increasing font size to improve readability on medium screens*/
+    }
+
+    /*Increase the size of my picture for smaller screens*/
+    .myPic{
+        height: 200px;
+        width: 200px;
+    }
+}
+
 /*Style for smaller screens*/
 @media screen and (max-width: 640px){
     /*Select all block column containers that are within 
